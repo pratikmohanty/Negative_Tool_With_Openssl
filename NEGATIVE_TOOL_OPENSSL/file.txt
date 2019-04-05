@@ -1,0 +1,174 @@
+CONNECTED(00000003)
+App_data_position: 0
+
+---
+Certificate chain
+ 0 s:/C=--/ST=SomeState/L=SomeCity/O=SomeOrganization/OU=SomeOrganizationalUnit/CN=localhost.localdomain/emailAddress=root@localhost.localdomain
+   i:/C=--/ST=SomeState/L=SomeCity/O=SomeOrganization/OU=SomeOrganizationalUnit/CN=localhost.localdomain/emailAddress=root@localhost.localdomain
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIEDjCCA3egAwIBAgICbkgwDQYJKoZIhvcNAQEFBQAwgbsxCzAJBgNVBAYTAi0t
+MRIwEAYDVQQIEwlTb21lU3RhdGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQK
+ExBTb21lT3JnYW5pemF0aW9uMR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxV
+bml0MR4wHAYDVQQDExVsb2NhbGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0B
+CQEWGnJvb3RAbG9jYWxob3N0LmxvY2FsZG9tYWluMB4XDTA5MDkwNDE4MTUwOVoX
+DTEwMDkwNDE4MTUwOVowgbsxCzAJBgNVBAYTAi0tMRIwEAYDVQQIEwlTb21lU3Rh
+dGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQKExBTb21lT3JnYW5pemF0aW9u
+MR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxVbml0MR4wHAYDVQQDExVsb2Nh
+bGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0BCQEWGnJvb3RAbG9jYWxob3N0
+LmxvY2FsZG9tYWluMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3T8JBeIPu
+aTEi/GNl8SCHfaY6vTJsD6ewNbQfEWuEUxqQpte9q9JXWQYaI1xXqfwqPkbrd+90
+PhjpXWAY9SOivDfH1at+kFEWAECb5Jvb18Zntf+TNm+1Ytn9gQIirRG0U2FrOuwx
+FwBFX6ITw4yzeEiufhhaE7kZi7l1GJj6tQIDAQABo4IBHTCCARkwHQYDVR0OBBYE
+FDb8qufw9MMGBD7nALQTRON9f+eGMIHpBgNVHSMEgeEwgd6AFDb8qufw9MMGBD7n
+ALQTRON9f+eGoYHBpIG+MIG7MQswCQYDVQQGEwItLTESMBAGA1UECBMJU29tZVN0
+YXRlMREwDwYDVQQHEwhTb21lQ2l0eTEZMBcGA1UEChMQU29tZU9yZ2FuaXphdGlv
+bjEfMB0GA1UECxMWU29tZU9yZ2FuaXphdGlvbmFsVW5pdDEeMBwGA1UEAxMVbG9j
+YWxob3N0LmxvY2FsZG9tYWluMSkwJwYJKoZIhvcNAQkBFhpyb290QGxvY2FsaG9z
+dC5sb2NhbGRvbWFpboICbkgwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOB
+gQAkvRMKmbT/JHJTA6gwzn4Fkxmnse7e1eRNB1ETFFAkwCg1NJYM9ZV5Im7qoWxY
+TmhR2vstPDVsVcnwOaLPulO2zy3utf2BCYZbFz+Feh+9bbO9NoQ1Epqugud79iFy
+EhoCJ31k5JzRDJpxJ+9/3IXkwmTdWon4ODq5lrKg+AOe+w==
+-----END CERTIFICATE-----
+subject=/C=--/ST=SomeState/L=SomeCity/O=SomeOrganization/OU=SomeOrganizationalUnit/CN=localhost.localdomain/emailAddress=root@localhost.localdomain
+issuer=/C=--/ST=SomeState/L=SomeCity/O=SomeOrganization/OU=SomeOrganizationalUnit/CN=localhost.localdomain/emailAddress=root@localhost.localdomain
+---
+No client certificate CA names sent
+---
+SSL handshake has read 1629 bytes and written 354 bytes
+---
+New, TLSv1/SSLv3, Cipher is DHE-RSA-AES256-SHA
+Server public key is 1024 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+SSL-Session:
+    Protocol  : SSLv3
+    Cipher    : DHE-RSA-AES256-SHA
+    Session-ID: 243143BA50E66CA0106AC7AD15F1D25A0DC0B25B07C1678080197A88EC59AA6E
+    Session-ID-ctx: 
+    Master-Key: 3F6C55E99482D3B34524880AC7FE7BE6AE6FE19BE88AAE995D6062D4C00493279535A084D6F6D067AA451C71D87DA62B
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1424080002
+    Timeout   : 7200 (sec)
+    Verify return code: 10 (certificate has expired)
+---
+drop connection and then reconnect
+CONNECTED(00000003)
+=============================BEFORE====================================== 768=============================SSL VERSION CHANGE HAPPENED====================================== 2App_data_position: 0
+
+---
+Reused, TLSv1/SSLv3, Cipher is DHE-RSA-AES256-SHA
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+SSL-Session:
+    Protocol  : SSLv2
+    Cipher    : DHE-RSA-AES256-SHA
+    Session-ID: 243143BA50E66CA0106AC7AD15F1D25A0DC0B25B07C1678080197A88EC59AA6E
+    Session-ID-ctx: 
+    Master-Key: 3F6C55E99482D3B34524880AC7FE7BE6AE6FE19BE88AAE995D6062D4C00493279535A084D6F6D067AA451C71D87DA62B
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1424080002
+    Timeout   : 7200 (sec)
+    Verify return code: 10 (certificate has expired)
+---
+drop connection and then reconnect
+CONNECTED(00000003)
+App_data_position: 0
+
+---
+New, TLSv1/SSLv3, Cipher is DHE-RSA-AES256-SHA
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+SSL-Session:
+    Protocol  : SSLv3
+    Cipher    : DHE-RSA-AES256-SHA
+    Session-ID: F528D410F8282531C4CBFD9C7414F325E419DD1950788A24423AD14C163C5004
+    Session-ID-ctx: 
+    Master-Key: 983F560E27DF08B36A59A17AA2D0EB5B2056D17D4E65D5CBCBAA3FC1372E9303A53164DCADB78C1196E53E4DE743F180
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1424080002
+    Timeout   : 7200 (sec)
+    Verify return code: 10 (certificate has expired)
+---
+drop connection and then reconnect
+CONNECTED(00000003)
+=============================BEFORE====================================== 768=============================SSL VERSION CHANGE HAPPENED====================================== 2App_data_position: 0
+
+---
+Reused, TLSv1/SSLv3, Cipher is DHE-RSA-AES256-SHA
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+SSL-Session:
+    Protocol  : SSLv2
+    Cipher    : DHE-RSA-AES256-SHA
+    Session-ID: F528D410F8282531C4CBFD9C7414F325E419DD1950788A24423AD14C163C5004
+    Session-ID-ctx: 
+    Master-Key: 983F560E27DF08B36A59A17AA2D0EB5B2056D17D4E65D5CBCBAA3FC1372E9303A53164DCADB78C1196E53E4DE743F180
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1424080002
+    Timeout   : 7200 (sec)
+    Verify return code: 10 (certificate has expired)
+---
+drop connection and then reconnect
+CONNECTED(00000003)
+App_data_position: 0
+
+---
+New, TLSv1/SSLv3, Cipher is DHE-RSA-AES256-SHA
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+SSL-Session:
+    Protocol  : SSLv3
+    Cipher    : DHE-RSA-AES256-SHA
+    Session-ID: 6F2B0B5B90F384EFA71D525281DD9F9E113A83829BDCE74EC1A4951486CCC583
+    Session-ID-ctx: 
+    Master-Key: 90C26F769B0C3F4751CB79AC8A0750FE727D1CEC4D45D0679B20A89C37A816DCB07DFD35773F91E3DAFF870C5C81CFAF
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1424080002
+    Timeout   : 7200 (sec)
+    Verify return code: 10 (certificate has expired)
+---
+drop connection and then reconnect
+CONNECTED(00000003)
+=============================BEFORE====================================== 768=============================SSL VERSION CHANGE HAPPENED====================================== 2App_data_position: 0
+
+---
+Reused, TLSv1/SSLv3, Cipher is DHE-RSA-AES256-SHA
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+SSL-Session:
+    Protocol  : SSLv2
+    Cipher    : DHE-RSA-AES256-SHA
+    Session-ID: 6F2B0B5B90F384EFA71D525281DD9F9E113A83829BDCE74EC1A4951486CCC583
+    Session-ID-ctx: 
+    Master-Key: 90C26F769B0C3F4751CB79AC8A0750FE727D1CEC4D45D0679B20A89C37A816DCB07DFD35773F91E3DAFF870C5C81CFAF
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1424080002
+    Timeout   : 7200 (sec)
+    Verify return code: 10 (certificate has expired)
+---

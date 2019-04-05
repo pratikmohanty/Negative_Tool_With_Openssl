@@ -1,0 +1,48 @@
+./ssl/d1_srvr.c:			s->session->cipher=s->s3->tmp.new_cipher;
+./ssl/t1_enc.c:		if (s->session->cipher != NULL)
+./ssl/t1_enc.c:			if (s->session->cipher->algorithm_enc == SSL_eNULL)
+./ssl/t1_enc.c:			if (s->session->cipher->algorithm_enc == SSL_RC4)
+./ssl/s3_srvr.c:			s->session->cipher=s->s3->tmp.new_cipher;
+./ssl/s3_srvr.c:		id=s->session->cipher->id;
+./ssl/s3_srvr.c:				s->session->cipher = c;
+./ssl/s3_srvr.c:			s->session->ciphers=ciphers;
+./ssl/s3_srvr.c:			pref_cipher=pref_cipher ? pref_cipher : ssl3_choose_cipher(s, s->session->ciphers, SSL_get_ciphers(s));
+./ssl/s3_srvr.c:			s->session->cipher=pref_cipher;
+./ssl/s3_srvr.c:			s->cipher_list = sk_SSL_CIPHER_dup(s->session->ciphers);
+./ssl/s3_srvr.c:			s->cipher_list_by_id = sk_SSL_CIPHER_dup(s->session->ciphers);
+./ssl/s3_srvr.c:	/* Given s->session->ciphers and SSL_get_ciphers, we must
+./ssl/s3_srvr.c:		if (s->session->ciphers != NULL)
+./ssl/s3_srvr.c:			sk_SSL_CIPHER_free(s->session->ciphers);
+./ssl/s3_srvr.c:		s->session->ciphers=ciphers;
+./ssl/s3_srvr.c:		c=ssl3_choose_cipher(s,s->session->ciphers,
+./ssl/s3_srvr.c:			sk=s->session->ciphers;
+./ssl/s3_srvr.c:				s->s3->tmp.new_cipher=s->session->cipher;
+./ssl/s3_srvr.c:		s->s3->tmp.new_cipher=s->session->cipher;
+./ssl/s2_clnt.c:					    &s->session->ciphers);
+./ssl/s2_clnt.c:		s->session->cipher=sk_SSL_CIPHER_value(prio,i);
+./ssl/d1_clnt.c:			s->session->cipher=s->s3->tmp.new_cipher;
+Binary file ./ssl/.s3_clnt.c.swp matches
+./ssl/d1_pkt.c:		(s->session != NULL) && (s->session->cipher != NULL))
+./ssl/s3_clnt.c:			s->session->cipher=s->s3->tmp.new_cipher;
+./ssl/s3_clnt.c:			s->session->cipher = pref_cipher ?
+./ssl/s3_clnt.c:	if (s->session->cipher)
+./ssl/s3_clnt.c:		s->session->cipher_id = s->session->cipher->id;
+./ssl/s3_clnt.c:	if (s->hit && (s->session->cipher_id != c->id))
+./ssl/s3_pkt.c:		(s->session != NULL) && (s->session->cipher != NULL))
+./ssl/s3_pkt.c:		(s->session != NULL) && (s->session->cipher != NULL) &&
+./ssl/s3_pkt.c:		s->session->cipher=s->s3->tmp.new_cipher;
+./ssl/ssl_lib.c:	if ((s->session == NULL) || (s->session->ciphers == NULL) ||
+./ssl/ssl_lib.c:	sk=s->session->ciphers;
+./ssl/ssl_lib.c:	if ((s->session != NULL) && (s->session->cipher != NULL))
+./ssl/ssl_lib.c:		return(s->session->cipher);
+./ssl/s3_enc.c:		if (s->session->cipher != NULL)
+./ssl/s3_enc.c:			if (s->session->cipher->algorithm_enc == SSL_eNULL)
+./ssl/s3_enc.c:			if (s->session->cipher->algorithm_enc == SSL_RC4)
+./ssl/s2_srvr.c:		s->session->cipher= cp;
+./ssl/s2_srvr.c:	is_export=SSL_C_IS_EXPORT(s->session->cipher);
+./ssl/s2_srvr.c:	if (s->session->cipher->algorithm2 & SSL2_CF_8_BYTE_ENC)
+./ssl/s2_srvr.c:			&s->session->ciphers);
+./ssl/s2_srvr.c:		    sk_SSL_CIPHER_free(s->session->ciphers);
+./ssl/s2_srvr.c:		    s->session->ciphers = prio;
+./ssl/s2_srvr.c:		/* s->session->ciphers should now have a list of
+./ssl/s2_srvr.c:			n=ssl_cipher_list_to_bytes(s,s->session->ciphers,d,0);
