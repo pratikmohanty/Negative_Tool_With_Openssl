@@ -1,5 +1,7 @@
 # Negative_Tool_With_Openssl
+
 New configurable options added to Openssl-1.0.1k to test negative scenarios from Client/Server side
+
 Following are the new options added to openssl s_client:-
 ===================================================================
 
