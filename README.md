@@ -84,6 +84,9 @@ sep_tcp_seg_server                       - Send Handshake messages in separate T
 To Compile Openssl
 =================================
 cd openssl-1.0.2d
+
 ./config
+
 make clean
+
 make
