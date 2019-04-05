@@ -80,3 +80,10 @@ multi_msg <option>  - Options 4,5,6,7 works for DH ciphers.
 corrupt_major_minor <position> <value>  - Corrupt the ssl version used. Value to corrupt it to must be given in a 4 digit numeric format (eg, to corrupt it 0x0202, enter 0202)
 					
 sep_tcp_seg_server                       - Send Handshake messages in separate TCP segments				
+
+To Compile Openssl
+=================================
+cd openssl-1.0.2d
+./config
+make clean
+make
